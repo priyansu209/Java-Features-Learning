@@ -26,5 +26,23 @@ public class StreamFunction {
 
         // Print the final filtered list
         System.out.println("Names starting with 'P' and having length > 7: " + newNames);
+
+        //using map() function
+	   // map() takes a function and return a value
+	   
+	   List<Integer> nums= new ArrayList<>();
+	   nums.add(6);
+	   nums.add(5);
+	   nums.add(9);
+	   nums.add(3);
+	   nums.add(8);
+	   
+	   
+	   List<Integer>numsStream=nums.stream()
+	   .map(i->i*i).collect(Collectors.toList());
+	   
+	   System.out.println(numsStream);
+	   
     }
 }
+
